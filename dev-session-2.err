@@ -26,3 +26,14 @@ Caused by:
 
 Import trace for requested module:
 ./app/(hub)/laundry/live/page.tsx
+ ⨯ ./app/(hub)/laundry/live/page.tsx
+Error: Failed to read source code from F:\KFUPM Student HUb\KFUPM-Student-Hub\app\(hub)\laundry\live\page.tsx
+
+Caused by:
+    stream did not contain valid UTF-8
+
+Import trace for requested module:
+./app/(hub)/laundry/live/page.tsx
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload

@@ -136,3 +136,64 @@
  ✓ Compiled /laundry in 481ms (382 modules)
  GET /bus-services 200 in 459ms
  ○ Compiling /laundry/live ...
+ GET /_next/static/webpack/91cbcd87679ccfca.webpack.hot-update.json 500 in 15381ms
+ GET /bus-services 500 in 64ms
+ GET /bus-services 500 in 70ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 127ms
+ GET /bus-services 500 in 127ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 500 in 35ms
+ ✓ Compiled / in 4.1s (978 modules)
+ GET /_next/static/webpack/88f3439c403a144a.webpack.hot-update.json 404 in 4653ms
+ GET /_next/static/webpack/88f3439c403a144a.webpack.hot-update.json 404 in 4629ms
+ GET / 200 in 4858ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 143ms
+ GET /bus-services 200 in 943ms
+ GET /bus-services 200 in 386ms
+ GET /dashboard 200 in 264ms
+ GET /dashboard 200 in 197ms
+ ○ Compiling /rewards ...
+ ✓ Compiled /rewards in 2.8s (977 modules)
+ ✓ Compiled in 1278ms (555 modules)
+ ○ Compiling /leaderboard ...
+ ✓ Compiled /leaderboard in 974ms (981 modules)
+ GET /dashboard 200 in 574ms
+ ○ Compiling /medical ...
+ ✓ Compiled /medical in 1148ms (434 modules)
+ ✓ Compiled in 4.8s (991 modules)
+ GET /rewards 200 in 258ms
+ ✓ Compiled in 2.4s (991 modules)
+ GET /rewards 200 in 285ms
+ ✓ Compiled in 2.5s (991 modules)
+ GET /rewards 200 in 279ms
+ ○ Compiling /others ...
+ ✓ Compiled /others in 794ms (434 modules)
+ ✓ Compiled in 4s (982 modules)
+ GET /leaderboard 200 in 452ms
+ ✓ Compiled in 2.1s (996 modules)
+ GET /leaderboard 200 in 285ms
+ GET /leaderboard 200 in 142ms
+ GET /rewards 200 in 117ms
+ GET /rewards 200 in 141ms
+ GET /rewards 200 in 134ms
+ ✓ Compiled in 2.5s (996 modules)
+ GET /rewards 200 in 281ms
+ GET /rewards 200 in 171ms
+ GET /rewards 200 in 229ms
+ ✓ Compiled in 3.4s (992 modules)
+ GET /leaderboard 200 in 276ms
+ GET /dashboard 200 in 347ms
+ ○ Compiling /marketplace ...
+ ✓ Compiled /marketplace in 1764ms (442 modules)
+ ✓ Compiled /others in 452ms (446 modules)
+ GET /leaderboard 200 in 604ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1246ms (435 modules)
+ GET / 200 in 2303ms
+ GET / 200 in 188ms
+ ✓ Compiled /dashboard in 456ms (442 modules)
+ GET /leaderboard 200 in 287ms
+ GET /leaderboard 200 in 336ms
+ ○ Compiling /bus-services ...
+ ✓ Compiled /bus-services in 1439ms (431 modules)
+ ○ Compiling /medical ...
+ ✓ Compiled /medical in 1388ms (436 modules)
