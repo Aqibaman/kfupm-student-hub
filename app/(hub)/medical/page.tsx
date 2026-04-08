@@ -140,7 +140,7 @@ export default function MedicalLandingPage() {
       <SoftCard>
         <SectionTitle title="Quick Actions" subtitle="Jump directly into the core emergency workflows without leaving the module." />
         <div className="flex flex-wrap gap-3">
-          <button type="button" onClick={handleInstantEmergencyRequest} disabled={isSubmitting} className="danger-btn min-w-[260px]">
+          <button type="button" onClick={handleInstantEmergencyRequest} disabled={isSubmitting} className="danger-btn w-full sm:w-auto sm:min-w-[260px]">
             {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <AlertTriangle className="h-4 w-4" />}
             Instant Emergency Request
           </button>
