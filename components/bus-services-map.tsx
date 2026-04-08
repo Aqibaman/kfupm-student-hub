@@ -158,7 +158,7 @@ export function BusServicesMap() {
             nearest.distance < 1.1 &&
             !(
               resumedBus.lastPausedStopId === nearest.stop.id &&
-              resumedBus.lastPausedProgress !== null &&
+              resumedBus.lastPausedProgress != null &&
               Math.abs(nextProgress - resumedBus.lastPausedProgress) < 0.08
             );
 
