@@ -8,7 +8,7 @@ export default function LiveMachineStatusPage() {
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {laundryMachines.map((machine) => (
           <SoftCard key={machine.id}>
-            <p className="text-sm text-slate-500">{machine.building} • {machine.room}</p>
+            <p className="text-sm text-slate-500">{machine.building} â€¢ {machine.room}</p>
             <h3 className="mt-2 text-2xl font-semibold">{machine.id}</h3>
             <p className="mt-3 text-sm font-medium text-slate-700">Type: {machine.type}</p>
             <p className="mt-1 text-sm font-medium text-slate-700">State: {machine.state}</p>

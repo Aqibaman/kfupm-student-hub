@@ -15,7 +15,7 @@ export default function LaundryHistoryPage() {
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-lg font-semibold text-slate-950">{booking.machineType} {booking.machineId}</p>
-                <p className="mt-2 text-sm text-slate-500">{booking.building} • {booking.room} • {booking.bookingDate} • {booking.startTime} - {booking.endTime}</p>
+                <p className="mt-2 text-sm text-slate-500">{booking.building} â€¢ {booking.room} â€¢ {booking.bookingDate} â€¢ {booking.startTime} - {booking.endTime}</p>
               </div>
               <div className="text-right">
                 <p className="text-sm font-semibold text-brand-700">{booking.usageResult}</p>
