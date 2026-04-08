@@ -1,0 +1,23 @@
+ ⨯ ./app/globals.css:78:3
+Syntax error: F:\KFUPM Student HUb\KFUPM-Student-Hub\app\globals.css The `bg-white/85` class does not exist. If `bg-white/85` is a custom class, make sure it is defined within a `@layer` directive.
+
+ [90m 76 | [39m
+ [90m 77 | [39m[33m.brand-chip[39m [33m{[39m
+[1m[31m>[39m[22m[90m 78 | [39m  [36m@apply[39m inline-flex items-center gap-2 rounded-full border border-brand-100 bg-white/85 px-3 py-1 text-[33m[[39m11px[33m][39m font-semibold uppercase tracking-[33m[[39m0.24em[33m][39m text-brand-700[33m;[39m
+ [90m    | [39m  [1m[31m^[39m[22m
+ [90m 79 | [39m[33m}[39m
+ [90m 80 | [39m
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\KFUPM Student HUb\KFUPM-Student-Hub\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!F:\KFUPM Student HUb\KFUPM-Student-Hub\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!F:\KFUPM Student HUb\KFUPM-Student-Hub\app\globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⨯ ./app/globals.css:78:3
+Syntax error: F:\KFUPM Student HUb\KFUPM-Student-Hub\app\globals.css The `bg-white/85` class does not exist. If `bg-white/85` is a custom class, make sure it is defined within a `@layer` directive.
+
+ [90m 76 | [39m
+ [90m 77 | [39m[33m.brand-chip[39m [33m{[39m
+[1m[31m>[39m[22m[90m 78 | [39m  [36m@apply[39m inline-flex items-center gap-2 rounded-full border border-brand-100 bg-white/85 px-3 py-1 text-[33m[[39m11px[33m][39m font-semibold uppercase tracking-[33m[[39m0.24em[33m][39m text-brand-700[33m;[39m
+ [90m    | [39m  [1m[31m^[39m[22m
+ [90m 79 | [39m[33m}[39m
+ [90m 80 | [39m
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|F:\KFUPM Student HUb\KFUPM-Student-Hub\node_modules\next\dist\build\webpack\loaders\css-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[2]!F:\KFUPM Student HUb\KFUPM-Student-Hub\node_modules\next\dist\build\webpack\loaders\postcss-loader\src\index.js??ruleSet[1].rules[14].oneOf[12].use[3]!F:\KFUPM Student HUb\KFUPM-Student-Hub\app\globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.

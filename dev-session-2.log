@@ -1,0 +1,138 @@
+
+> kfupm-student-hub@0.1.0 dev
+> next dev --hostname 0.0.0.0
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Network:      http://0.0.0.0:3000
+
+ ✓ Starting...
+ ✓ Ready in 5s
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 1124ms (60 modules)
+ ✓ Compiled in 3.4s (293 modules)
+ GET /manifest.webmanifest 200 in 6252ms
+ GET /dashboard 200 in 6565ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1167ms (683 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 1237ms
+ GET /_next/static/chunks/app/(hub)/medical/page.js 404 in 1528ms
+ ✓ Compiled /icon in 267ms (391 modules)
+ GET /icon?size=192 200 in 940ms
+ GET /icon?828c3c9896f370e0 200 in 944ms
+ ○ Compiling /medical ...
+ ✓ Compiled /medical in 9.6s (726 modules)
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 4884ms
+ GET /dashboard 200 in 11283ms
+ GET / 200 in 11291ms
+ GET /medical 200 in 11319ms
+ ○ Compiling /marketplace ...
+ ✓ Compiled /marketplace in 3.8s (775 modules)
+ GET /marketplace 200 in 4453ms
+ GET /laundry 200 in 4497ms
+ GET /bus-services 200 in 4496ms
+ ○ Compiling /user-information ...
+ ✓ Compiled /user-information in 1077ms (790 modules)
+ GET /manifest.webmanifest 200 in 1232ms
+ GET /notifications 200 in 1544ms
+ GET /user-information 200 in 1544ms
+ GET /dashboard 200 in 711ms
+ GET /manifest.webmanifest 200 in 73ms
+ GET /dashboard 200 in 79ms
+ GET /manifest.webmanifest 200 in 16ms
+ GET /dashboard 200 in 64ms
+ GET /dashboard 200 in 77ms
+ GET /dashboard 200 in 83ms
+ GET /manifest.webmanifest 200 in 63ms
+ ○ Compiling /laundry/washer ...
+ ✓ Compiled /laundry/washer in 2.1s (758 modules)
+ ○ Compiling /laundry/bookings ...
+ ✓ Compiled /laundry/bookings in 1306ms (778 modules)
+ ✓ Compiled in 497ms (351 modules)
+ GET /manifest.webmanifest 200 in 98ms
+ ✓ Compiled /marketplace in 496ms (427 modules)
+ GET /manifest.webmanifest 200 in 151ms
+ ○ Compiling /marketplace/saved ...
+ ✓ Compiled /marketplace/saved in 1204ms (765 modules)
+ ○ Compiling /medical ...
+ ✓ Compiled /medical in 1104ms (441 modules)
+ ✓ Compiled in 1552ms (755 modules)
+ ○ Compiling /medical/status ...
+ ✓ Compiled /medical/status in 2.9s (753 modules)
+ ✓ Compiled /manifest.webmanifest in 505ms (444 modules)
+ GET /manifest.webmanifest 200 in 1645ms
+ ✓ Compiled /notifications in 369ms (439 modules)
+ ✓ Compiled / in 283ms (443 modules)
+ GET /manifest.webmanifest 200 in 141ms
+ GET /manifest.webmanifest 200 in 41ms
+ GET /manifest.webmanifest 200 in 44ms
+ ✓ Compiled in 2.1s (745 modules)
+ ✓ Compiled /marketplace in 361ms (398 modules)
+ GET /marketplace 200 in 749ms
+ GET /dashboard 200 in 134ms
+ ○ Compiling /manifest.webmanifest ...
+ ✓ Compiled /manifest.webmanifest in 1145ms (433 modules)
+ GET /manifest.webmanifest 200 in 1889ms
+ GET /manifest.webmanifest 200 in 45ms
+ GET /marketplace 200 in 362ms
+ GET /manifest.webmanifest 200 in 47ms
+ GET /manifest.webmanifest 200 in 363ms
+ GET /marketplace 200 in 174ms
+ GET /manifest.webmanifest 200 in 124ms
+ GET /manifest.webmanifest 200 in 36ms
+ GET / 200 in 512ms
+ ○ Compiling /medical ...
+ GET /dashboard 200 in 652ms
+ ✓ Compiled /laundry in 1126ms (436 modules)
+ ✓ Compiled (444 modules)
+ GET /medical 200 in 2964ms
+ GET /bus-services 200 in 2232ms
+ GET /laundry 200 in 2425ms
+ GET /marketplace 200 in 201ms
+ GET /notifications 200 in 393ms
+ ○ Compiling /user-information ...
+ ✓ Compiled /user-information in 581ms (451 modules)
+ GET /manifest.webmanifest 200 in 999ms
+ GET /user-information 200 in 1206ms
+ GET /marketplace 200 in 94ms
+ ✓ Compiled in 3.3s (743 modules)
+ ✓ Compiled /manifest.webmanifest in 318ms (420 modules)
+ GET /manifest.webmanifest 200 in 515ms
+ ✓ Compiled in 1968ms (778 modules)
+ GET /marketplace 200 in 239ms
+ GET /marketplace 200 in 104ms
+ GET /marketplace 200 in 288ms
+ ✓ Compiled in 2.4s (743 modules)
+ ✓ Compiled in 879ms (358 modules)
+ ✓ Compiled in 512ms (358 modules)
+ GET /marketplace 200 in 479ms
+ ○ Compiling /marketplace/saved ...
+ ✓ Compiled /marketplace/saved in 719ms (389 modules)
+ GET /marketplace/saved 200 in 1170ms
+ ✓ Compiled in 521ms (358 modules)
+ GET /marketplace 200 in 88ms
+ ○ Compiling /marketplace/my-listings ...
+ ✓ Compiled /marketplace/my-listings in 818ms (735 modules)
+ GET /marketplace/my-listings 200 in 1194ms
+ GET /marketplace 200 in 115ms
+ ✓ Compiled in 997ms (360 modules)
+ ✓ Compiled in 1919ms (745 modules)
+ ○ Compiling /medical ...
+ ✓ Compiled /medical in 1936ms (401 modules)
+ GET /marketplace 200 in 450ms
+ ○ Compiling /marketplace/saved ...
+ ✓ Compiled /marketplace/saved in 567ms (398 modules)
+ GET /marketplace/saved 200 in 1208ms
+ ○ Compiling /medical/hospital ...
+ ✓ Compiled /medical/hospital in 2.8s (754 modules)
+ ○ Compiling /others ...
+ ✓ Compiled /others in 1855ms (751 modules)
+ ○ Compiling /lost-found ...
+ ✓ Compiled /lost-found in 530ms (755 modules)
+ ○ Compiling /course-reviews ...
+ ✓ Compiled /course-reviews in 528ms (746 modules)
+ ○ Compiling /course-reviews/my-reviews ...
+ ✓ Compiled /course-reviews/my-reviews in 651ms (748 modules)
+ ✓ Compiled /laundry in 481ms (382 modules)
+ GET /bus-services 200 in 459ms
+ ○ Compiling /laundry/live ...

@@ -1,0 +1,10 @@
+npm warn Unknown user config "timeout". This will stop working in the next major version of npm.
+
+> kfupm-student-hub@0.1.0 start
+> next start -p 3005
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3005
+
+ ✓ Starting...
+ ✓ Ready in 1497ms

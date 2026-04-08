@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --kfupm-green: #008540;
+  --kfupm-green-deep: #0d573f;
+  --kfupm-gold: #dac961;
+  --kfupm-petrol: #003e51;
+  --kfupm-sand: #f7f5ee;
+  --kfupm-ink: #26322e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Aptos, "Segoe UI", "Trebuchet MS", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(0, 133, 64, 0.12), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(218, 201, 97, 0.12), transparent 24%),
+    linear-gradient(180deg, #f9f8f3 0%, #eef4ef 100%);
+  color: var(--kfupm-ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: none;
+  font: inherit;
+}
+
+.field {
+  @apply mt-2 w-full rounded-[20px] border border-white bg-white px-4 py-3.5 text-sm text-slate-900 shadow-sm transition placeholder:text-slate-400 focus:border-brand-300 focus:ring-4 focus:ring-brand-100;
+}
+
+.label {
+  @apply text-sm font-semibold tracking-[0.02em] text-slate-700;
+}
+
+.btn-base {
+  @apply inline-flex h-12 items-center justify-center gap-2 rounded-[18px] px-5 text-sm font-semibold transition duration-200 ease-out shadow-sm focus-visible:ring-4 focus-visible:ring-brand-100;
+}
+
+.primary-btn {
+  @apply btn-base bg-gradient-to-r from-brand-700 via-brand-600 to-forest text-white shadow-[0_14px_30px_rgba(0,133,64,0.22)] hover:-translate-y-0.5 hover:shadow-[0_18px_38px_rgba(0,133,64,0.26)];
+}
+
+.secondary-btn {
+  @apply btn-base border border-brand-100 bg-white text-petrol-700 hover:-translate-y-0.5 hover:border-brand-300 hover:bg-brand-50 hover:text-brand-800;
+}
+
+.danger-btn {
+  @apply btn-base bg-gradient-to-r from-red-600 to-red-500 text-white shadow-[0_14px_30px_rgba(220,38,38,0.18)] hover:-translate-y-0.5 hover:shadow-[0_18px_38px_rgba(220,38,38,0.24)];
+}
+
+.ghost-btn {
+  @apply btn-base border border-transparent bg-transparent text-slate-600 hover:bg-brand-50 hover:text-brand-700;
+}
+
+.icon-btn {
+  @apply inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/20 bg-white/10 text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-white/20;
+}
+
+.surface-card {
+  @apply rounded-[28px] border border-white bg-white shadow-soft backdrop-blur;
+}
+
+.brand-chip {
+  @apply inline-flex items-center gap-2 rounded-full border border-brand-100 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand-700;
+}
+
+.status-pill {
+  @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold;
+}

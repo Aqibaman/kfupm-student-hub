@@ -1,0 +1,20 @@
+
+> kfupm-student-hub@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 16.4s
+ ○ Compiling /dashboard ...
+ GET /dashboard 500 in 56740ms
+ GET / 500 in 20968ms
+ ✓ Compiled /_error in 5.4s (541 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 1246ms (768 modules)
+ GET / 200 in 1472ms
+ GET /_next/static/webpack/88f3439c403a144a.webpack.hot-update.json 404 in 2926ms
+ GET / 200 in 100ms
+
+F:\KFUPM Student HUb\KFUPM-Student-Hub>
