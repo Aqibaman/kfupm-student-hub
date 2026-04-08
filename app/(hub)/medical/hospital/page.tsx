@@ -20,7 +20,45 @@ export default function HospitalDashboardPage() {
       <PageIntro title="Hospital Dashboard" description="Hospital staff can monitor which patient is still pending, which case is active, and which request has been completed using the same stage model seen elsewhere in the hub." backHref="/medical" />
       <SoftCard>
         <SectionTitle title="Incoming Cases" subtitle="Pending, active, and completed cases are visually separated so receiving teams can prepare accurately." />
-        <div className="overflow-x-auto">
+        <div className="space-y-3 md:hidden">
+          {requests.map((request) => {
+            const cardTone =
+              request.statusState === "Pending"
+                ? "border-slate-200 bg-slate-50"
+                : request.statusState === "In Progress"
+                  ? "border-gold-200 bg-gold-50/60"
+                  : "border-brand-200 bg-brand-50/60";
+
+            return (
+              <button
+                key={request.id}
+                type="button"
+                onClick={() => setSelectedId(request.id)}
+                className={`w-full rounded-[24px] border p-4 text-left transition ${cardTone}`}
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="text-sm font-semibold text-brand-700">{request.id}</p>
+                    <p className="mt-2 text-lg font-semibold text-slate-950">{request.studentName}</p>
+                    <p className="mt-1 text-sm capitalize text-slate-600">{request.emergencyType}</p>
+                  </div>
+                  <span className="rounded-full bg-white/85 px-3 py-1 text-xs font-semibold text-slate-700">
+                    {request.statusState}
+                  </span>
+                </div>
+                <div className="mt-4 grid gap-3 text-sm text-slate-600">
+                  <div><span className="font-semibold text-slate-900">Severity:</span> {request.severity}</div>
+                  <div><span className="font-semibold text-slate-900">Current stage:</span> {request.stage}</div>
+                  <div><span className="font-semibold text-slate-900">ETA:</span> {request.eta}</div>
+                  <div><span className="font-semibold text-slate-900">Assigned unit:</span> {request.responderUnit}</div>
+                  <div><span className="font-semibold text-slate-900">Receiving unit:</span> {request.destinationHospital}</div>
+                </div>
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="hidden overflow-x-auto md:block">
           <table className="min-w-full text-left text-sm">
             <thead>
               <tr className="border-b border-slate-200 text-slate-500">
@@ -54,7 +92,7 @@ export default function HospitalDashboardPage() {
 
       <SoftCard>
         <SectionTitle title="Hospital Actions" subtitle="Hospital staff can prepare intake, inspect details, or complete the case from the receiving side." />
-        <div className="flex flex-wrap gap-3">
+        <div className="grid gap-3 sm:flex sm:flex-wrap">
           <button type="button" className="secondary-btn" onClick={() => selected && updateCase(selected.id, { eta: "Preparing intake" })}>Mark Preparing</button>
           <button type="button" className="secondary-btn" onClick={() => selected && setSelectedId(selected.id)}><Eye className="h-4 w-4" />View Patient Details</button>
           <button type="button" className="primary-btn" onClick={() => selected && updateCase(selected.id, { stage: "Complete" })}>Mark Received / Complete</button>

@@ -25,7 +25,40 @@ export default function DispatchDashboardPage() {
       <PageIntro title="Dispatch Dashboard" description="Dispatchers can see the same request-stage model used on the student status page and update assignment, ETA, hospital destination, and response progress from one place." backHref="/medical" />
       <SoftCard>
         <SectionTitle title="Incoming Cases" subtitle="Current Stage and Status State use the exact same labels as the student and hospital views." />
-        <div className="overflow-x-auto">
+        <div className="space-y-3 md:hidden">
+          {requests.map((request) => (
+            <button
+              key={request.id}
+              type="button"
+              onClick={() => setSelectedId(request.id)}
+              className={`w-full rounded-[24px] border p-4 text-left transition ${
+                selected?.id === request.id
+                  ? "border-brand-200 bg-brand-50/70 shadow-sm"
+                  : "border-slate-200 bg-white"
+              }`}
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm font-semibold text-brand-700">{request.id}</p>
+                  <p className="mt-2 text-lg font-semibold text-slate-950">{request.studentName}</p>
+                  <p className="mt-1 text-sm capitalize text-slate-600">{request.emergencyType}</p>
+                </div>
+                <span className="rounded-full bg-brand-50 px-3 py-1 text-xs font-semibold text-brand-700">
+                  {request.stage}
+                </span>
+              </div>
+              <div className="mt-4 grid gap-3 text-sm text-slate-600">
+                <div><span className="font-semibold text-slate-900">Location:</span> {request.location}</div>
+                <div><span className="font-semibold text-slate-900">Status:</span> {request.statusState}</div>
+                <div><span className="font-semibold text-slate-900">Submitted:</span> {request.timeSubmitted}</div>
+                <div><span className="font-semibold text-slate-900">Assigned unit:</span> {request.responderUnit}</div>
+                <div><span className="font-semibold text-slate-900">Hospital:</span> {request.destinationHospital}</div>
+              </div>
+            </button>
+          ))}
+        </div>
+
+        <div className="hidden overflow-x-auto md:block">
           <table className="min-w-full text-left text-sm">
             <thead>
               <tr className="border-b border-slate-200 text-slate-500">
@@ -75,7 +108,7 @@ export default function DispatchDashboardPage() {
 
           <SoftCard>
             <SectionTitle title="Dispatcher Actions" subtitle="These changes persist locally and update the student and hospital dashboards immediately." />
-            <div className="flex flex-wrap gap-3">
+            <div className="grid gap-3 sm:flex sm:flex-wrap">
               {emergencyStages.slice(1).map((stage) => (
                 <button key={stage} className={stage === "Complete" ? "danger-btn" : "secondary-btn"} type="button" onClick={() => updateCase({ stage })}>
                   {stage === "Help Assigned" ? "Mark as Help Assigned" : stage === "On the Way" ? "Mark as On the Way" : stage === "On Site" ? "Mark as On Site" : "Mark as Complete"}
