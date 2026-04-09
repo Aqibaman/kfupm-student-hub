@@ -328,13 +328,6 @@ export function BusServicesMap() {
             </div>
           </SoftCard>
 
-          <SoftCard>
-            <SectionTitle title="Integration Note" subtitle="This can later connect to actual tracker hardware." />
-            <div className="space-y-3 text-sm leading-6 text-slate-600">
-              <p>The route sheet shown here is the real image you provided, with a live demo overlay for stops and moving buses.</p>
-              <p>When actual GPS trackers are added to KFUPM buses, these markers can be updated from live location feeds instead of simulated motion.</p>
-            </div>
-          </SoftCard>
         </div>
       </div>
     </div>
